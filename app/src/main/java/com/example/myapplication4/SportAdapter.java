@@ -6,13 +6,14 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
 public class SportAdapter extends RecyclerView.Adapter<SportAdapter.SportViewHolder> {
 
-    private List<Sport> sportList;
+    List<Sport> sportList;
 
     public SportAdapter(List<Sport> sportList) {
         this.sportList = sportList;
@@ -29,6 +30,7 @@ public class SportAdapter extends RecyclerView.Adapter<SportAdapter.SportViewHol
         }
     }
 
+    @NonNull
     @Override
     public SportViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_sport_card, parent, false);

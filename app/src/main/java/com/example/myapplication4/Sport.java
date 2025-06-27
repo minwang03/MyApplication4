@@ -1,8 +1,8 @@
 package com.example.myapplication4;
 
 public class Sport {
-    private String name;
-    private int imageResId;
+    String name;
+    int imageResId;
 
     public Sport(String name, int imageResId) {
         this.name = name;

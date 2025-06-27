@@ -15,9 +15,9 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    private RecyclerView recyclerView;
-    private SportAdapter sportAdapter;
-    private List<Sport> sportList;
+    RecyclerView recyclerView;
+    SportAdapter sportAdapter;
+    List<Sport> sportList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         sportList.add(new Sport("Basketball", R.drawable.basketball));
         sportList.add(new Sport("Volleyball", R.drawable.volleyball));
         sportList.add(new Sport("Football", R.drawable.football));
-            sportList.add(new Sport("Tennis", R.drawable.tennis));
+        sportList.add(new Sport("Tennis", R.drawable.tennis));
 
         sportAdapter = new SportAdapter(sportList);
         recyclerView.setAdapter(sportAdapter);
